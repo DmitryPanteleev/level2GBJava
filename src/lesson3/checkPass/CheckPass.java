@@ -1,4 +1,4 @@
-package lesson3.arrayCountWord;
+package lesson3.checkPass;
 
 public class CheckPass {
 

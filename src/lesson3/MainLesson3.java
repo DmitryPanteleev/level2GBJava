@@ -1,8 +1,8 @@
 package lesson3;
 
-import lesson3.arrayCountWord.CheckPass;
+import lesson3.checkPass.CheckPass;
 import lesson3.arrayCountWord.LogicCountWord;
-import lesson3.arrayCountWord.PhoneBook;
+import lesson3.phoneBook.PhoneBook;
 
 public class MainLesson3 {
 

@@ -1,4 +1,4 @@
-package lesson3.arrayCountWord;
+package lesson3.phoneBook;
 
 import java.util.ArrayList;
 import java.util.List;
