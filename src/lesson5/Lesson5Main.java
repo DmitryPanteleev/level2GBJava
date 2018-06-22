@@ -2,7 +2,7 @@ package lesson5;
 
 public class Lesson5Main {
 
-    static final int size = 100000000;
+    static final int size = 10000000;
     static final int h = size / 2;
     static float[] arr = new float[size];
 
@@ -10,7 +10,22 @@ public class Lesson5Main {
         initialArr(arr);
         mathMetod(arr);
         initialArr(arr);
-        runThread(arr,4);
+        runThread(arr, 400);
+//        System.out.println(checkArray(arr));
+    }
+
+    private static boolean checkArray(float[] arr) {
+        int i = 0;
+        for (float f :
+                arr) {
+            if (f == 0.0) i++;
+        }
+//        System.out.println(i);
+        if (i == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
@@ -57,7 +72,7 @@ public class Lesson5Main {
         */
         long finish = System.currentTimeMillis();
 
-        System.out.println("Время выполнения метода: " + (finish - start) + " миллисекунды");
+        System.out.println("Время выполнения метода в " + thread + " потоков:" + (finish - start) + " миллисекунды");
 
 
     }
@@ -69,7 +84,7 @@ public class Lesson5Main {
                     * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
         }
         long finish = System.currentTimeMillis();
-        System.out.println("Время выполнения метода: " + (finish - start) + " миллисекунды");
+        System.out.println("Время выполнения метода в один поток : " + (finish - start) + " миллисекунды");
     }
 
 
