@@ -10,7 +10,7 @@ public class Lesson5Main {
         initialArr(arr);
         mathMetod(arr);
         initialArr(arr);
-        runThread(arr, 400);
+        runThread(arr, 4);
 //        System.out.println(checkArray(arr));
     }
 
