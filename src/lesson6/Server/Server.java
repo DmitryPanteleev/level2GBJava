@@ -37,7 +37,7 @@ public class Server {
                 Scanner scanner = new Scanner(System.in);
                 String str = scanner.nextLine();
                 if (str.equals("end")) break;
-                outputStream.writeUTF(str + "\n");
+                outputStream.writeUTF("Server: " + str);
                 outputStream.flush();
 //                outputStream.writeUTF(inputStream.readUTF() + "\n");
 

@@ -37,7 +37,7 @@ public class Client {
             while (true) {
                 scanner = new Scanner(System.in);
                 String string = scanner.nextLine();
-                outputStream.writeUTF(string + "\n");
+                outputStream.writeUTF("Client: " + string);
                 outputStream.flush();
             }
         } catch (IOException e) {
